@@ -1,0 +1,36 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PJ Paper Trader</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{--bg:#f3f5f6;--surface:#fff;--line:#d9e0e3;--fg:#14211f;--muted:#5d6f6c;--accent:#0f6b5f;--gain:#13794a;--loss:#b3342b;--chip:#e4ece9;
+--display:"Archivo","Helvetica Neue",Arial,sans-serif;--mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1514;--surface:#16201f;--line:#2a3836;--fg:#e4ecea;--muted:#8fa29e;--accent:#3fb8a4;--gain:#4cc488;--loss:#f07468;--chip:#1f2d2b;color-scheme:dark}}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.45 var(--display);padding:20px max(16px,env(safe-area-inset-left)) 48px max(16px,env(safe-area-inset-right))}
+.wrap{max-width:960px;margin:0 auto;display:grid;gap:26px}
+h1{font-size:1.7rem;font-weight:800;margin:0} h2{font-size:1.15rem;margin:0} h3{font-size:.75rem;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin:18px 0 8px}
+.muted{color:var(--muted)} .gain{color:var(--gain)} .loss{color:var(--loss)}
+section{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px}
+.sechead{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin-bottom:12px}
+.pill{font-size:.78rem;font-weight:700;padding:4px 10px;border-radius:99px;background:var(--chip)} .pill.good{color:var(--gain)} .pill.bad{color:var(--loss)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px}
+.stats div{display:grid;gap:2px} .k{font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.v{font:600 1.15rem var(--mono);font-variant-numeric:tabular-nums}
+.chart{width:100%;height:auto;margin-top:14px;display:block}
+.legend{font-size:.8rem;color:var(--muted);display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:6px 0 0}
+.sw{display:inline-block;width:18px;height:0;border-top:2.5px solid var(--accent);margin-left:8px} .sw.bm{border-top:1.5px dashed var(--muted)}
+.scroll{overflow-x:auto} table{border-collapse:collapse;width:100%;min-width:560px}
+th,td{padding:8px 10px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap;font-variant-numeric:tabular-nums}
+td{font-family:var(--mono);font-size:.88rem} th{font-size:.7rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.l{text-align:left} td.why{font-family:var(--display);white-space:normal;min-width:180px}
+.side{font:700 .7rem var(--display);padding:2px 8px;border-radius:99px;background:var(--chip)} .side.buy{color:var(--gain)} .side.sell{color:var(--loss)}
+.today ul{margin:6px 0 0;padding-left:18px} footer{font-size:.8rem;color:var(--muted)}
+</style></head><body><div class="wrap">
+<header><h1>PJ Paper Trader</h1><p class="muted" style="margin:4px 0 0">Robot paper trading since today · Updated Sat 24 Oct 2026, 08:51 PM (Perth)</p></header>
+<section class="today"><h2>This morning</h2><p class="muted">No trades this morning. Nothing changed trend.</p></section>
+<section><h2>SMSF · ASX</h2><p class="muted">No trading days yet.</p></section>
+<section><h2>Crypto</h2><p class="muted">No trading days yet.</p></section>
+<section><h2>Trade log</h2><div class="scroll"><table><thead><tr><th class="l">Date</th><th class="l">Ticker</th><th class="l">Side</th><th>Units</th><th>Price</th><th>Banked P/L</th><th class="l">Why</th></tr></thead>
+<tbody><tr><td colspan="7" class="l muted">No trades yet.</td></tr></tbody></table></div></section>
+<footer>Paper money only. Prices are daily closes from Yahoo Finance, with 0.1% fees on each trade. Not financial advice.</footer>
+</div></body></html>
